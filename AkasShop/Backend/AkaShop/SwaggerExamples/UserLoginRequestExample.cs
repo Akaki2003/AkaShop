@@ -9,8 +9,8 @@ namespace AkaShop.SwaggerExamples
         {
             return new UserModel()
             {
-                Email = "akaki123",
-                Password = "Akaki1!"
+                Email = "Admin@gmail.com",
+                Password = "Admin123!"
             };
         }
     }

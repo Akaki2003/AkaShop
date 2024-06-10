@@ -5,7 +5,7 @@ const Login = () => {
   const { login } = useAuth();
   const [user, setUser] = useState({
     email: "Admin@gmail.com",
-    password: "Admin123",
+    password: "Admin123!",
   });
 
   const handleChange = (e) => {

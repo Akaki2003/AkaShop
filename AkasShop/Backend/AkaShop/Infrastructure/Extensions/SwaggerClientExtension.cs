@@ -18,7 +18,7 @@ namespace AkaShop.Infrastructure.Extensions
                     Description = "AkaShopApi",
                     Contact = new OpenApiContact
                     {
-                        Email = "akaki.ujarashvili.1@btu.edu.ge",
+                        Email = "Admin@gmail.com",
                         Name = "Shop Api",
                     }
                 });

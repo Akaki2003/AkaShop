@@ -37,7 +37,7 @@ namespace AkaShop.Infrastructure.Seed
         {
             var users = new List<User>
                 {
-                     new (){ Email = "Admin@gmail.com", UserName="Admin",PasswordHash="Admin123",EmailConfirmed = true },
+                     new (){ Email = "Admin@gmail.com", UserName="Admin",PasswordHash="Admin123!",EmailConfirmed = true },
                 };
 
             if (!context.Users.Any())
@@ -53,14 +53,13 @@ namespace AkaShop.Infrastructure.Seed
 
         public static void SeedProducts(ApplicationDbContext context, ref bool seeded)
         {
-            var img = "https://plus.unsplash.com/premium_photo-1680112806039-244731d88d45?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
             var products = new List<Product>
             {
-                new () { Name = "Product 1", Price = 1000, Description = "Description 1", ImageUrl = img, UserId = 1},
-                new () { Name = "Product 2", Price = 2000, Description = "Description 2", ImageUrl = img, UserId = 1},
-                new () { Name = "Product 3", Price = 3000, Description = "Description 3", ImageUrl = img, UserId = 1},
-                new () { Name = "Product 4", Price = 4000, Description = "Description 4", ImageUrl = img, UserId = 1},
-                new () { Name = "Product 5", Price = 5000, Description = "Description 5", ImageUrl = img, UserId = 1},
+                new () { Name = "Fancy Hat", Price = 1500, Description = "A stylish hat for any occasion.", ImageUrl = "https://images.pexels.com/photos/324730/pexels-photo-324730.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", UserId = 1},
+                new () { Name = "Vintage Camera", Price = 2500, Description = "Capture memories with this classic camera.", ImageUrl = "https://images.pexels.com/photos/408508/pexels-photo-408508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", UserId = 1},
+                new () { Name = "Artisanal Coffee Maker", Price = 3500, Description = "Brew the perfect cup with this handcrafted coffee maker.", ImageUrl = "https://images.pexels.com/photos/209151/pexels-photo-209151.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", UserId = 1},
+                new () { Name = "Designer Sneakers", Price = 4500, Description = "Step out in style with these trendy sneakers.", ImageUrl = "https://images.pexels.com/photos/2845548/pexels-photo-2845548.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", UserId = 1},
+                new () { Name = "Handmade Jewelry Set", Price = 5500, Description = "Elevate your look with this exquisite jewelry set.", ImageUrl = "https://images.pexels.com/photos/106156/pexels-photo-106156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", UserId = 1},
             };
 
             if (!context.Products.Any())
