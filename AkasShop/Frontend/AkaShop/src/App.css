@@ -145,7 +145,7 @@ body {
   align-self: center;
   justify-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(592px, 1fr));
   gap: 1rem;
 }
 
@@ -154,6 +154,7 @@ body {
   font-family: sans-serif;
   cursor: pointer;
   background-color: white;
+  height: 20rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -175,7 +176,7 @@ body {
 }
 
 .productImage {
-  flex: 1;
+  flex: 2;
 }
 
 .product img {
