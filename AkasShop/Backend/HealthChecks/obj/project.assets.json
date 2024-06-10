@@ -3440,11 +3440,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
+      "projectUniqueName": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
       "projectName": "HealthChecks",
-      "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
+      "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
       "packagesPath": "C:\\Users\\ujara\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\AkasShop\\Backend\\HealthChecks\\obj\\",
+      "outputPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\HealthChecks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujara\\AppData\\Roaming\\NuGet\\NuGet.Config",

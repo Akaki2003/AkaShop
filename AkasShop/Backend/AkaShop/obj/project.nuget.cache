@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CE6n3LujSqYNbON8tIDEm98rC+MSysXYKeUpEvZF6S2EFkueIQ8WdNQUUP0fRmr4/0etysAuePVXU8e2YPrR+w==",
+  "dgSpecHash": "nW04FzZBUodrBh/eeq41DAWP7UR++YzsJeC98RATMk2KZ6qHeuvBvOqhW/ICaryi334XOrVpr3fT/YqMx3yAlA==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
+  "projectFilePath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ujara\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\ujara\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

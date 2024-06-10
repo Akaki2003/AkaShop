@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sw5X/GR2cDTs2jraBDVCs5t2pXXInxOVH8Sq/ZJvAGEdoR93jausknZwP68oH2iJYeXHAqtl1TpEwRoiI/WVaA==",
+  "dgSpecHash": "AaZ6aNma/ERr2Vbj3eeVD1Z2Lu9KPNGQwu4azRX9hMF/gUIH5FuM2c4UnYGdsFy3bdYiUySj10b5v1R3FKSomQ==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
+  "projectFilePath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ujara\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\ujara\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",

@@ -895,11 +895,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj",
+      "projectUniqueName": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj",
       "projectName": "AkaShop.Domain",
-      "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj",
+      "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj",
       "packagesPath": "C:\\Users\\ujara\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Domain\\obj\\",
+      "outputPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujara\\AppData\\Roaming\\NuGet\\NuGet.Config",

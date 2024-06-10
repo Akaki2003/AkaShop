@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F8iDrNYfPhi/tC0lKBqi7vwFbGmzjxCDl2XKkJ4g8bCPP16fb02zfOWVRg4GY7UhA9FYfbCC2FxfpEsiPNDddg==",
+  "dgSpecHash": "bJpAtqZZ7bwmrfxeiBHW4ZCMX7npOSPyfmjirqQoz2cJoOg4b5q1IVyojnZuh/+wKVpZiad98F8ibAehRlPOLw==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj",
+  "projectFilePath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ujara\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.5\\microsoft.aspnetcore.cryptography.internal.8.0.5.nupkg.sha512",
     "C:\\Users\\ujara\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.5\\microsoft.aspnetcore.cryptography.keyderivation.8.0.5.nupkg.sha512",

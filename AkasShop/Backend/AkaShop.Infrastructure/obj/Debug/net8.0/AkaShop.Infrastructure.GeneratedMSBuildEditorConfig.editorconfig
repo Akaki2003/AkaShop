@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AkaShop.Infrastructure
-build_property.ProjectDir = D:\MyProjects\AkasShop\Backend\AkaShop.Infrastructure\
+build_property.ProjectDir = D:\MyProjects\AkaShopProject\AkasShop\Backend\AkaShop.Infrastructure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

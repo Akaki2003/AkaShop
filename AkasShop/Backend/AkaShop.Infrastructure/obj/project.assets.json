@@ -1484,11 +1484,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
+      "projectUniqueName": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
       "projectName": "AkaShop.Infrastructure",
-      "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
+      "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\ujara\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\obj\\",
+      "outputPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujara\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1505,11 +1505,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj": {
-              "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj"
+            "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj": {
+              "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Application\\AkaShop.Application.csproj"
             },
-            "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj": {
-              "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj"
+            "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj": {
+              "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Domain\\AkaShop.Domain.csproj"
             }
           }
         }

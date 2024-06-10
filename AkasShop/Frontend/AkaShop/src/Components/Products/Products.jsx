@@ -37,9 +37,7 @@ const Products = () => {
     ? Math.ceil(products.itemsCount / itemsPerPage)
     : 0;
 
-  // Invoke when user click to request another page.
   const handlePageClick = (event) => {
-    // const newOffset = (event.selected * itemsPerPage) % products.itemsCount;
     const newOffset = event.selected;
     console.log(
       `User requested page number ${event.selected}, which is offset ${newOffset}`
@@ -47,7 +45,6 @@ const Products = () => {
     setItemOffset(newOffset);
     setUrl(APIURL + `Products?PageSize=${itemsPerPage}&Page=${newOffset}`);
   };
-  //paging
 
   if (!products) return <Loading />;
 

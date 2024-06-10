@@ -3977,11 +3977,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
+      "projectUniqueName": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
       "projectName": "AkaShop",
-      "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
+      "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop\\AkaShop.csproj",
       "packagesPath": "C:\\Users\\ujara\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop\\obj\\",
+      "outputPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ujara\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3998,8 +3998,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj": {
-              "projectPath": "D:\\MyProjects\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj"
+            "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj": {
+              "projectPath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\AkaShop.Infrastructure\\AkaShop.Infrastructure.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xoCJzEJG8DRrsygodwlURlXtlU26mk26QMMdzAu7+4fcggE44SCFPy9m+Kaf/ZI8jMYTDYQVAc0zAiBgeqfX0w==",
+  "dgSpecHash": "U4ALdMTVl7f8q4DMPuW0E4v7lj/xEY+/NETOwris1PIrrUjNcONNcKeBEporJ9CfSi9bWJ+jGWpSenUpPsBKQQ==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\AkasShop\\Backend\\Jobs\\Jobs.csproj",
+  "projectFilePath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\Jobs\\Jobs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ujara\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\ujara\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

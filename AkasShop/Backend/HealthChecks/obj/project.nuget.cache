@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzGvVxBDG7VIe3V8vsLEWaxcBQ4iuDrt0z+0TaBM7xWSgMRwPy72qryIC4vC+pI/wRJX+Fwfa8UkleNpAJmslw==",
+  "dgSpecHash": "npSVpfAu4QnKuflFP2+H+SS5pSppt712m94KtYC803OVq+Lao5B2g3Xke9dBujNZ1LFoPapTkoz/bOeeNtjDPw==",
   "success": true,
-  "projectFilePath": "D:\\MyProjects\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
+  "projectFilePath": "D:\\MyProjects\\AkaShopProject\\AkasShop\\Backend\\HealthChecks\\HealthChecks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ujara\\.nuget\\packages\\aspnetcore.healthchecks.npgsql\\8.0.1\\aspnetcore.healthchecks.npgsql.8.0.1.nupkg.sha512",
     "C:\\Users\\ujara\\.nuget\\packages\\aspnetcore.healthchecks.ui\\8.0.1\\aspnetcore.healthchecks.ui.8.0.1.nupkg.sha512",
