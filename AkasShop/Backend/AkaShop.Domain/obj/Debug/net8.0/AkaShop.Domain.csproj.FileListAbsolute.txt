@@ -1,0 +1,12 @@
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\bin\Debug\net8.0\AkaShop.Domain.deps.json
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\bin\Debug\net8.0\AkaShop.Domain.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\bin\Debug\net8.0\AkaShop.Domain.pdb
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.csproj.AssemblyReference.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.AssemblyInfoInputs.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.AssemblyInfo.cs
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.csproj.CoreCompileInputs.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\refint\AkaShop.Domain.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\AkaShop.Domain.pdb
+D:\MyProjects\AkasShop\Backend\AkaShop.Domain\obj\Debug\net8.0\ref\AkaShop.Domain.dll

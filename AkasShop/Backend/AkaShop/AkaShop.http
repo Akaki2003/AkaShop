@@ -1,0 +1,6 @@
+@AkaShop_HostAddress = http://localhost:5165
+
+GET {{AkaShop_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

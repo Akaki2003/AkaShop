@@ -1,0 +1,15 @@
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\bin\Debug\net8.0\AkaShop.Application.deps.json
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\bin\Debug\net8.0\AkaShop.Application.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\bin\Debug\net8.0\AkaShop.Application.pdb
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\bin\Debug\net8.0\AkaShop.Domain.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\bin\Debug\net8.0\AkaShop.Domain.pdb
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.csproj.AssemblyReference.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.AssemblyInfoInputs.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.AssemblyInfo.cs
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.csproj.CoreCompileInputs.cache
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.csproj.CopyComplete
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\refint\AkaShop.Application.dll
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\AkaShop.Application.pdb
+D:\MyProjects\AkasShop\Backend\AkaShop.Application\obj\Debug\net8.0\ref\AkaShop.Application.dll
