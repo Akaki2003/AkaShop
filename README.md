@@ -1,4 +1,4 @@
-![image](https://github.com/Akaki2003/AkaShop/assets/98699561/063e4bc9-029a-4214-9ca9-932aceb36588)# AkaShop
+# AkaShop
 
 AkaShop is my first full-stack project that allows for CRUD operations on products. I built it using .NET Core for the backend and React for the frontend. The project incorporates JWT for registration/login, pagination, React Router for navigation, and Context API for prop drilling.
 
