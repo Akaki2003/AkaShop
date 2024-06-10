@@ -399,3 +399,4 @@ FodyWeavers.xsd
 
 **/appsettings.json
 *.jwk
+/AkasShop/Backend/AkaShop/Keys/certScript.ps1
