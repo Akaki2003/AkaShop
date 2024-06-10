@@ -1,12 +1,9 @@
 import axios from "axios";
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useState } from "react";
 import { APIURL } from "../Constants";
-import { AppContext } from "../App";
 import { useNavigate } from "react-router-dom";
 
 const AddProduct = () => {
-  const appContext = useContext(AppContext);
-  const cookies = appContext.cookies;
   const navigate = useNavigate();
   const [properties, setProperties] = useState({
     name: "",
@@ -15,21 +12,31 @@ const AddProduct = () => {
     imageUrl: "",
   });
 
-  const handleChnage = (event) => {
+  const handleChange = (event) => {
     setProperties({ ...properties, [event.target.name]: event.target.value });
   };
+
   const handleCreate = () => {
     const url = APIURL + "Products";
+    const token = localStorage.getItem("jwt_authorization");
     const headers = {
       headers: {
-        Authorization: "Bearer " + cookies.get("jwt_authorization"),
+        Authorization: `Bearer ${token}`,
       },
     };
-    axios.post(url, properties, headers).then((response) => {
-      navigate("/");
-    });
+    axios
+      .post(url, properties, headers)
+      .then((response) => {
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("Error creating product:", error);
+        if (error.response.status === 401) {
+          navigate("/login");
+        }
+      });
   };
-  //   useRef;
+
   return (
     <div className="addProductPage">
       <div className="form-container">
@@ -41,7 +48,7 @@ const AddProduct = () => {
                 type="text"
                 name="name"
                 value={properties.name}
-                onChange={handleChnage}
+                onChange={handleChange}
               />
             </div>
             <div className="form-group">
@@ -50,7 +57,7 @@ const AddProduct = () => {
                 type="text"
                 name="description"
                 value={properties.description}
-                onChange={handleChnage}
+                onChange={handleChange}
               />
             </div>
 
@@ -60,7 +67,7 @@ const AddProduct = () => {
                 type="text"
                 name="price"
                 value={properties.price}
-                onChange={handleChnage}
+                onChange={handleChange}
               />
             </div>
             <div className="form-group">
@@ -69,7 +76,7 @@ const AddProduct = () => {
                 type="text"
                 name="imageUrl"
                 value={properties.imageUrl}
-                onChange={handleChnage}
+                onChange={handleChange}
               />
             </div>
           </div>

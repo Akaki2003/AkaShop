@@ -1,31 +1,29 @@
-import { useContext } from "react";
 import { Link, useMatch, useResolvedPath, useNavigate } from "react-router-dom";
-import { AppContext } from "../../App";
 import { useAuth } from "../../context/AuthContext";
 import { jwtDecode } from "jwt-decode";
 
 const Navbar = () => {
-  const appContext = useContext(AppContext);
   const { logout } = useAuth();
-  const cookies = appContext.cookies;
-  const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
   };
 
+  const token = localStorage.getItem("jwt_authorization");
+  const decodedToken = token ? jwtDecode(token) : null;
+
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img className="logo" src="/akashop-high-resolution-logo.png"></img>
+        <img
+          className="logo"
+          src="/akashop-high-resolution-logo.png"
+          alt="logo"
+        />
       </Link>
       <ul>
-        {cookies.get("jwt_authorization") && (
-          <Link to="/profile">
-            {jwtDecode(cookies.get("jwt_authorization")).email}
-          </Link>
-        )}
-        {cookies.get("jwt_authorization") ? (
+        {decodedToken && <Link to="/profile">{decodedToken.email}</Link>}
+        {decodedToken ? (
           <Link to="/" onClick={handleLogout}>
             Logout
           </Link>
@@ -35,7 +33,6 @@ const Navbar = () => {
             <CustomLink to="/register">Register</CustomLink>
           </>
         )}
-        {/* <h2>Welcome{user && user.email}!</h2> */}
         <CustomLink to="/pricing">Pricing</CustomLink>
         <CustomLink to="/about">About</CustomLink>
       </ul>

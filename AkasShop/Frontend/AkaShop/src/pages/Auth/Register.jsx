@@ -1,13 +1,8 @@
 import React, { useContext, useState } from "react";
 import { useAuth } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
-import { AppContext } from "../../App";
 
 const Register = () => {
-  const navigate = useNavigate();
   const { register } = useAuth();
-  const appContext = useContext(AppContext);
-  const cookies = appContext.cookies;
 
   const [user, setUser] = useState({
     email: "",
@@ -20,8 +15,6 @@ const Register = () => {
 
   const handleRegister = async () => {
     if (user) {
-      const email = user.email;
-      console.log("user in Register.jsx:" + JSON.stringify(user));
       await register(user);
     }
   };

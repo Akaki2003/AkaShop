@@ -1,54 +1,59 @@
 import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { APIURL } from "../Constants";
-import { AppContext } from "../App";
 import Tabs from "../Components/Tabs/Tabs";
 import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
   const navigate = useNavigate();
   const [profile, setProfile] = useState(null);
-  const appContext = useContext(AppContext);
   const [products, setProducts] = useState(null);
-  const cookies = appContext.cookies;
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
+        const token = localStorage.getItem("jwt_authorization");
         const url = `${APIURL}User`;
         const headers = {
           headers: {
-            Authorization: `Bearer ${cookies.get("jwt_authorization")}`,
+            Authorization: `Bearer ${token}`,
           },
         };
         const response = await axios.get(url, headers);
         setProfile(response.data);
       } catch (error) {
         console.error("Error fetching profile:", error);
+        if (error.response.status === 401) {
+          navigate("/login");
+        }
       }
     };
 
     fetchProfile();
-  }, [cookies]);
+  }, [navigate]);
 
   useEffect(() => {
     const getUserProducts = async () => {
       try {
+        const token = localStorage.getItem("jwt_authorization");
         const url = `${APIURL}Products/UserProducts`;
         const headers = {
           headers: {
-            Authorization: `Bearer ${cookies.get("jwt_authorization")}`,
+            Authorization: `Bearer ${token}`,
           },
         };
         const response = await axios.get(url, headers);
         setProducts(response.data);
       } catch (error) {
         console.error("Error getting user products:", error);
+        if (error.response.status === 401) {
+          navigate("/login");
+        }
       }
     };
 
     getUserProducts();
-  }, [cookies]);
+  }, [navigate]);
 
   if (!profile || !products) {
     return <p>Loading...</p>;
@@ -79,12 +84,30 @@ const Profile = () => {
                 onClick={() => navigate(`/edit/${product.id}`)}
               >
                 <div className="userProductDetails">
-                  <h3 className="userProductDetailsTitle">{product.name}</h3>
-                  <p>{product.description}</p>
+                  <div>
+                    <h3 className="userProductDetailsTitle">{product.name}</h3>
+                    <p>{product.description}</p>
+                    <p>
+                      created at:{" "}
+                      {new Date(product.createdAt).toLocaleDateString("en-GB", {
+                        day: "numeric",
+                        month: "short",
+                      })}{" "}
+                      /{" "}
+                      {new Date(product.createdAt).toLocaleTimeString("en-GB", {
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                    </p>
+                  </div>
                   <p className="userProductPrice">${product.price}</p>
                 </div>
                 <div className="userProductImg">
-                  <img src={product.imageUrl} alt="" width="300px" />
+                  <img
+                    src={product.imageUrl}
+                    alt={product.name}
+                    width="300px"
+                  />
                 </div>
               </div>
             ))

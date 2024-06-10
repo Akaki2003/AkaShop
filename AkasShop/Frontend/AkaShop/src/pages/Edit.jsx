@@ -1,11 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import {
-  useLocation,
-  useNavigate,
-  useParams,
-  useSearchParams,
-} from "react-router-dom";
-import { AppContext } from "../App";
+import { useNavigate, useParams } from "react-router-dom";
 import Loading from "../Components/Loading";
 import { APIURL } from "../Constants";
 import axios from "axios";
@@ -14,19 +8,26 @@ const Edit = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
   const navigate = useNavigate();
-  const appContext = useContext(AppContext);
-  const cookies = appContext.cookies;
 
   const handleEdit = () => {
     const url = APIURL + "Products";
+    const token = localStorage.getItem("jwt_authorization");
     const headers = {
       headers: {
-        Authorization: "Bearer " + cookies.get("jwt_authorization"),
+        Authorization: "Bearer " + token,
       },
     };
-    axios.put(url, product, headers).then((response) => {
-      navigate("/");
-    });
+    axios
+      .put(url, product, headers)
+      .then((response) => {
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("Error updating product:", error);
+        if (error.response.status === 401) {
+          navigate("/login");
+        }
+      });
   };
 
   const handleChange = (event) => {
@@ -35,14 +36,21 @@ const Edit = () => {
 
   useEffect(() => {
     const url = APIURL + `Products/${id}`;
-    axios.get(url).then((response) => {
-      console.log(response);
-      setProduct(response.data);
-    });
-  }, [id]);
+    axios
+      .get(url)
+      .then((response) => {
+        setProduct(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product:", error);
+        if (error.response.status === 401) {
+          navigate("/login");
+        }
+      });
+  }, [id, navigate]);
 
   if (!product) return <Loading />;
-  console.log(product);
+
   return (
     <div className="editPage">
       <article className="form-container">
@@ -68,15 +76,13 @@ const Edit = () => {
               />
             </div>
             <div className="form-group">
-              <div className="form-group">
-                <label htmlFor="description">Description</label>
-                <input
-                  id="description"
-                  name="description"
-                  onChange={handleChange}
-                  value={product.description}
-                />
-              </div>
+              <label htmlFor="description">Description</label>
+              <input
+                id="description"
+                name="description"
+                onChange={handleChange}
+                value={product.description}
+              />
             </div>
             <div className="form-group">
               <label htmlFor="price">Price</label>

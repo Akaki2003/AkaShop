@@ -1,20 +1,11 @@
 import React, { useContext, useState } from "react";
-import { APIURL } from "../../Constants";
-import axios from "axios";
-import { jwtDecode } from "jwt-decode";
-import { AppContext } from "../../App";
 import { useAuth } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const navigate = useNavigate();
   const { login } = useAuth();
-  // const login = useAuth();
-  const appContext = useContext(AppContext);
-  const cookies = appContext.cookies;
   const [user, setUser] = useState({
     email: "Admin@gmail.com",
-    password: "Admin123", //needs to be removed
+    password: "Admin123",
   });
 
   const handleChange = (e) => {
@@ -22,8 +13,6 @@ const Login = () => {
   };
   const handleLogin = async () => {
     if (user) {
-      const email = user.email;
-      console.log("user in Login.jsx:" + JSON.stringify(user));
       await login(user);
     }
   };
