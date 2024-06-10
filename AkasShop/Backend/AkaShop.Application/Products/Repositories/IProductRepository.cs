@@ -1,5 +1,4 @@
-﻿using AkaShop.Application.Products.Requests;
-using AkaShop.Domain.Entities;
+﻿using AkaShop.Domain.Entities;
 
 namespace AkaShop.Application.Products.Repositories
 {

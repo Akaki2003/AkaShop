@@ -1,6 +1,4 @@
 ﻿using AkaShop.Domain.Entities;
-using IdentityServer4.EntityFramework.Entities;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

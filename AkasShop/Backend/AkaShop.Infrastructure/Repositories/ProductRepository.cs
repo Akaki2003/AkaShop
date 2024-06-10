@@ -2,7 +2,6 @@
 using AkaShop.Domain.Entities;
 using AkaShop.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System.Formats.Asn1;
 
 namespace AkaShop.Infrastructure.Repositories
 {
