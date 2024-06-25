@@ -26,31 +26,17 @@ builder.Services.AddDefaultIdentity<User>(options =>
 })
     .AddRoles<UserRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
-//builder.Logging.ClearProviders();
-//Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).CreateLogger();
 
-//builder.Host.UseSerilog();
 services.AddCors();
-services.AddControllers()/*.AddNewtonsoftJson()*/;
+services.AddControllers();
 
-//builder.Services.AddVersionedApiExplorer(options =>
-//{
-//    options.GroupNameFormat = "'v'VVV";
-//    options.SubstituteApiVersionInUrl = true;
-//});
-//services.AddAkaShopIdentity(env);
-//builder.Services.AddHealthChecks().AddNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 services.Configure<JWTConfiguration>(builder.Configuration.GetSection(nameof(JWTConfiguration)));
-//builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-
-//builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
 
 services.AddEndpointsApiExplorer();
 services.AddMyAuthentication(configuration);
 
 services.AddServices();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 services.AddSwaggerDocumentation(configuration);
 
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetExecutingAssembly());
@@ -58,7 +44,6 @@ builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetExecutingAssembly(
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
