@@ -2,6 +2,9 @@
 
 AkaShop is my first full-stack project that allows for CRUD operations on products. I built it using .NET Core for the backend and React for the frontend. The project incorporates JWT for registration/login, pagination, React Router for navigation, and Context API for prop drilling.
 
+![image](https://github.com/Akaki2003/AkaShop/assets/98699561/e8449b30-5484-4aaa-98a2-92ce5bb216f4)
+
+
 ## Features
 
 - **CRUD Functionality**: Add, edit, and view products.
@@ -25,3 +28,4 @@ AkaShop is my first full-stack project that allows for CRUD operations on produc
 - I've used several other technologies and practices that I haven't mentioned here. Feel free to explore the codebase to see how I've structured things and what other tools or libraries I might have incorporated.
 
 I'm proud of what I've built and learned along the way. Feel free to dive into AkaShop's code, run it yourself, and let me know what you think or if you have any suggestions!
+
